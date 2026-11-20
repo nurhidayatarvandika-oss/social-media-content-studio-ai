@@ -1,24 +1,34 @@
 ---
 name: quality-control
-description: "Audit accuracy, originality, brand fit, accessibility, rights, and platform-policy risks."
+description: "Rubrik penilaian tetap dan klasifikasi temuan untuk menentukan lolos, revisi, atau tolak."
+agents: [quality-controller, fact-checker, brand-editor, copyright-policy-reviewer]
 ---
 
-# Editorial Quality Control Skill
+# Skill: Kontrol mutu
 
-## Purpose
-Audit accuracy, originality, brand fit, accessibility, rights, and platform-policy risks.
+Rubrik penilaian tetap dan klasifikasi temuan untuk menentukan lolos, revisi, atau tolak.
+## Rubrik (skor 1-5 per dimensi)
+| Dimensi | Yang dinilai |
+|---|---|
+| Akurasi | Klaim terverifikasi, tanggal dan nama benar, tidak ada anakronisme |
+| Kejujuran | Judul, thumbnail, hook sesuai isi; dramatisasi dan rekonstruksi berlabel |
+| Orisinalitas | Sudut dan penulisan sendiri; tidak menjiplak |
+| Kejelasan | Mudah dipahami penonton umum; istilah dijelaskan |
+| Kepatuhan | Hak aset, musik, pengungkapan AI, kebijakan platform |
+| Kesiapan produksi | Aset, durasi, subtitle, spesifikasi ekspor lengkap |
 
-## Procedure
-1. Read the studio configuration and approved brief.
-2. Confirm objective, audience, platform, and deliverable format.
-3. Apply the relevant specialist agents.
-4. Separate verified evidence from recommendations and creative choices.
-5. Produce the required output in the matching template.
-6. Run the governance and quality checklist.
-7. Return a human approval gate and next action.
+## Keputusan
+- **LOLOS:** semua dimensi minimal 4 dan tidak ada temuan KRITIS.
+- **LOLOS DENGAN REVISI:** semua dimensi minimal 3, tidak ada KRITIS, dan semua MAYOR punya rencana perbaikan.
+- **DITOLAK:** ada dimensi di bawah 3 atau ada temuan KRITIS terbuka.
 
-## Guardrails
-- Do not invent sources, metrics, platform rules, or performance guarantees.
-- Verify time-sensitive claims against current primary sources.
-- Do not publish or schedule without explicit, action-specific approval.
-- Respect copyright, privacy, consent, accessibility, and disclosures.
+## Klasifikasi temuan
+- KRITIS: fakta salah yang material, aset tanpa hak, klaim menyesatkan, konten sensitif tanpa review.
+- MAYOR: klaim tanpa sumber, nama tidak konsisten, label AI/rekonstruksi hilang.
+- MINOR: gaya bahasa, ritme, detail visual.
+
+## Prosedur
+1. Kumpulkan laporan fact-checker, brand-editor, copyright-policy-reviewer.
+2. Isi `templates/qc-report.md`.
+3. Lakukan cek silang: judul-thumbnail-isi, durasi, nama, label.
+4. Putuskan dan serahkan ke Studio Director. Ulangi setelah perbaikan; jangan menurunkan ambang agar lolos.

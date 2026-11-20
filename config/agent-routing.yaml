@@ -3,14 +3,39 @@ routing:
   strategy: [content-strategist, audience-researcher]
   trend_research: [trend-researcher, competitor-analyst]
   factual_research: [source-researcher, fact-checker]
-  writing: [scriptwriter, storyteller, hook-specialist, copywriter]
+  writing: [scriptwriter, storyteller, hook-specialist, copywriter, seo-specialist]
   production: [video-director, storyboard-artist, ai-video-prompt-engineer, voiceover-writer, video-editor, thumbnail-designer]
   youtube: [youtube-strategist, youtube-longform-specialist, youtube-shorts-specialist, youtube-metadata-specialist]
   facebook: [facebook-strategist, facebook-reels-specialist, facebook-community-manager]
   tiktok: [tiktok-strategist, tiktok-video-specialist, tiktok-search-specialist]
   final_review: [brand-editor, copyright-policy-reviewer, quality-controller]
   learning: [analytics-analyst, experimentation-strategist, repurposing-specialist, monetization-strategist]
+  orchestration: [studio-director]
 defaults:
   owner_approval_required: true
   parallelize_independent_research: true
   resolve_conflicts_with: studio-director
+pipelines:   # urutan agen per workflow; sumber kebenaran ada di workflows/*.md
+  daily-production: [content-manager, content-strategist, audience-researcher, trend-researcher, source-researcher, fact-checker, storyteller, hook-specialist, scriptwriter, voiceover-writer, video-director, storyboard-artist, ai-video-prompt-engineer, video-editor, thumbnail-designer, repurposing-specialist, youtube-strategist, facebook-strategist, tiktok-strategist, brand-editor, copyright-policy-reviewer, quality-controller, project-manager, analytics-analyst]
+  research-and-factcheck: [source-researcher, fact-checker, audience-researcher, studio-director]
+  youtube-longform: [youtube-strategist, youtube-longform-specialist, scriptwriter, voiceover-writer, storyboard-artist, video-director, seo-specialist, youtube-metadata-specialist, thumbnail-designer, video-editor, brand-editor, copyright-policy-reviewer, quality-controller]
+  short-form: [hook-specialist, tiktok-video-specialist, facebook-reels-specialist, youtube-shorts-specialist, fact-checker, video-editor, tiktok-search-specialist, copyright-policy-reviewer, quality-controller]
+  repurpose-three-platforms: [repurposing-specialist, youtube-shorts-specialist, facebook-reels-specialist, tiktok-video-specialist, youtube-metadata-specialist, facebook-community-manager, tiktok-search-specialist, quality-controller]
+  campaign-planning: [content-strategist, trend-researcher, audience-researcher, competitor-analyst, youtube-strategist, facebook-strategist, tiktok-strategist, project-manager, analytics-analyst, experimentation-strategist]
+  publishing-handoff: [quality-controller, project-manager, youtube-metadata-specialist, facebook-community-manager, tiktok-search-specialist, studio-director]
+  analytics-review: [analytics-analyst, experimentation-strategist, monetization-strategist, studio-director]
+  content-audit: [fact-checker, brand-editor, copyright-policy-reviewer, quality-controller]
+  crisis-escalation: [studio-director, fact-checker, copyright-policy-reviewer, facebook-community-manager, brand-editor]
+commands:   # command -> workflow dan skill
+  daily-content: {workflow: daily-production, skills: [daily-content-planning, content-research, platform-repurposing, quality-control]}
+  history-documentary: {workflow: daily-production, skills: [content-research, youtube-longform, quality-control]}
+  youtube-video: {workflow: youtube-longform, skills: [youtube-longform, thumbnail-packaging, quality-control]}
+  tiktok-video: {workflow: short-form, skills: [short-form-video, quality-control]}
+  facebook-reels: {workflow: short-form, skills: [short-form-video, platform-repurposing, quality-control]}
+  viral-research: {workflow: campaign-planning, skills: [content-research, daily-content-planning]}
+  content-campaign: {workflow: campaign-planning, skills: [daily-content-planning, platform-repurposing, analytics-learning]}
+  content-audit: {workflow: content-audit, skills: [quality-control, content-research]}
+  repurpose-content: {workflow: repurpose-three-platforms, skills: [platform-repurposing, short-form-video]}
+  weekly-report: {workflow: analytics-review, skills: [analytics-learning]}
+  thumbnail-lab: {workflow: youtube-longform, skills: [thumbnail-packaging]}
+  production-board: {workflow: campaign-planning, skills: [daily-content-planning]}

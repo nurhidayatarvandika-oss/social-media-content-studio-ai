@@ -36,3 +36,9 @@ A GitHub repository is not automatically installed into Claude.ai browser chats.
 Open the required Markdown files or provide the relevant command text to Claude.
 For persistent agent installation, use an agent environment that supports custom
 agents and follow its current installation guide.
+
+## Validasi
+Jalankan `python3 tools/validate.py` setelah mengubah file. Skrip memeriksa struktur agen, rujukan antarfile, routing, jumlah, dan pengaturan keamanan.
+
+## Claude Code (ringkas)
+Salin `agents/`, `commands/`, `skills/` ke folder yang didukung versi Claude Code Anda lalu verifikasi di dokumentasi terbaru. Frontmatter tambahan (`group`, `workflow`, `skills`, `agents`) bersifat informasi dan dapat diabaikan host.

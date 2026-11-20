@@ -1,24 +1,25 @@
 ---
 name: analytics-learning
-description: "Interpret owner-provided metrics, identify hypotheses, and design measurable experiments."
+description: "Mencatat data nyata, menemukan pola, dan menjalankan eksperimen satu variabel."
+agents: [analytics-analyst, experimentation-strategist, monetization-strategist]
 ---
 
-# Analytics & Experimentation Skill
+# Skill: Analitik dan pembelajaran
 
-## Purpose
-Interpret owner-provided metrics, identify hypotheses, and design measurable experiments.
+Mencatat data nyata, menemukan pola, dan menjalankan eksperimen satu variabel.
+## Prosedur
+1. Terima data hanya dari owner atau konektor resmi yang terkonfirmasi.
+2. Catat di `templates/analytics-log.csv`. Kolom kosong dibiarkan kosong, bukan diisi perkiraan.
+3. Bandingkan konten dalam periode setara; beri peringatan jika sampel kecil.
+4. Pisahkan TEMUAN (didukung data) dan HIPOTESIS (dugaan).
+5. Rancang eksperimen: ubah satu variabel; tulis di `templates/experiment-log.md`.
+6. Cek syarat monetisasi di sumber resmi dan catat tanggal verifikasi.
 
-## Procedure
-1. Read the studio configuration and approved brief.
-2. Confirm objective, audience, platform, and deliverable format.
-3. Apply the relevant specialist agents.
-4. Separate verified evidence from recommendations and creative choices.
-5. Produce the required output in the matching template.
-6. Run the governance and quality checklist.
-7. Return a human approval gate and next action.
+## Metrik yang dianjurkan
+Retensi dan durasi tonton rata-rata, rasio selesai, bagikan dan simpan, pengikut baru, sumber penonton.
 
-## Guardrails
-- Do not invent sources, metrics, platform rules, or performance guarantees.
-- Verify time-sensitive claims against current primary sources.
-- Do not publish or schedule without explicit, action-specific approval.
-- Respect copyright, privacy, consent, accessibility, and disclosures.
+## Format laporan
+Ringkasan produksi minggu ini; tabel metrik; 3 temuan; 2 hipotesis; 1 eksperimen; 3 prioritas minggu depan.
+
+## Larangan
+Tidak mengarang angka, tidak menyimpulkan melampaui data, tidak menjanjikan pendapatan atau viralitas.

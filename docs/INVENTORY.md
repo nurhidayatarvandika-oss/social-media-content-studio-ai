@@ -1,8 +1,9 @@
-# Project inventory
+# Inventaris proyek
 
-- Specialist agents: 37
-- Skills: 8
-- Commands: 12
-- Workflows: 10
+- Agen spesialis: 37
+- Skill: 8
+- Command: 12
+- Workflow: 10
+- Template: 10
 
-The counts refer to authored Markdown instruction files in this repository.
+Jumlah merujuk pada file instruksi Markdown yang ditulis di repositori ini. Jalankan `python3 tools/validate.py` untuk memastikan angka ini sama dengan isi folder.

@@ -1,15 +1,21 @@
-# Workflow: Analytics Review
+# Workflow: Tinjauan analitik
 
-## Steps
-1. Collect date range and source of metrics
-2. Normalize comparable metrics and note missing fields
-3. Compare content by format and objective
-4. Separate observation from causal hypothesis
-5. Identify top lessons and weak signals
-6. Propose one or two controlled experiments
-7. Update learning log
+**Tujuan:** Mengubah data performa nyata dari owner menjadi pelajaran dan eksperimen.
+**Pemakaian:** Dipakai oleh /weekly-report.
 
-## Completion criteria
-- Required deliverables are present.
-- Unknowns and risks are visible.
-- Human approval is recorded before external publication.
+| No | Agen | Aksi | Keluaran | Gerbang |
+|---|---|---|---|---|
+| 1 | analytics-analyst | Catat data di analytics-log.csv dan bandingkan antar konten | Laporan analitik | - |
+| 2 | experimentation-strategist | Rumuskan hipotesis dan eksperimen satu variabel | Log eksperimen | - |
+| 3 | monetization-strategist | Cek kemajuan terhadap syarat monetisasi (terverifikasi dan bertanggal) | Status monetisasi | - |
+| 4 | studio-director | Rekomendasi 3 tindakan prioritas untuk minggu depan | Rencana minggu depan | - |
+
+## Aturan
+- Langkah berurutan kecuali agen yang independen (boleh paralel).
+- Berhenti di setiap gerbang dan minta persetujuan eksplisit untuk gerbang itu saja.
+- Temuan KRITIS dari QC mengembalikan alur ke langkah penyebabnya.
+- Tidak ada aksi publikasi, penghapusan, pengeluaran dana, atau perubahan akun tanpa persetujuan Gerbang D.
+
+## Selesai bila
+- Semua keluaran tabel di atas ada dan temuan terbuka tercatat.
+- Status gerbang tercatat di templates/approval-record.md.

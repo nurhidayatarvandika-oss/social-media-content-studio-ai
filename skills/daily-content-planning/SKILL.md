@@ -1,24 +1,28 @@
 ---
 name: daily-content-planning
-description: "Turn goals and audience needs into a realistic daily content slate across selected platforms."
+description: "Menghasilkan slate topik, memilih satu, dan menyusun kalender produksi yang realistis."
+agents: [content-manager, content-strategist, trend-researcher, project-manager]
 ---
 
-# Daily Content Planning Skill
+# Skill: Perencanaan harian
 
-## Purpose
-Turn goals and audience needs into a realistic daily content slate across selected platforms.
+Menghasilkan slate topik, memilih satu, dan menyusun kalender produksi yang realistis.
+## Kapan dipakai
+Saat owner meminta ide, konten harian, atau kalender.
 
-## Procedure
-1. Read the studio configuration and approved brief.
-2. Confirm objective, audience, platform, and deliverable format.
-3. Apply the relevant specialist agents.
-4. Separate verified evidence from recommendations and creative choices.
-5. Produce the required output in the matching template.
-6. Run the governance and quality checklist.
-7. Return a human approval gate and next action.
+## Prosedur
+1. Baca `config/studio.yaml` (niche, audiens, kadensi) dan backlog.
+2. Kumpulkan 5-8 kandidat dari: kalender peringatan sejarah 30-60 hari ke depan, pertanyaan audiens, celah pesaing, tema evergreen.
+3. Beri skor 1-5 pada: Relevansi audiens, Ketersediaan sumber, Kebaruan sudut, Kelayakan produksi (kreator tunggal), Risiko (5 = aman). Total maksimum 25.
+4. Pilih kandidat dengan skor tertinggi; jika skor sama, pilih yang sumbernya paling kuat.
+5. Beri kandidat peringkat 2 dan 3 sebagai cadangan.
+6. Susun kalender 7 hari dengan kadensi default config (`cadence`), lengkap dengan gerbang persetujuan sebagai tonggak.
 
-## Guardrails
-- Do not invent sources, metrics, platform rules, or performance guarantees.
-- Verify time-sensitive claims against current primary sources.
-- Do not publish or schedule without explicit, action-specific approval.
-- Respect copyright, privacy, consent, accessibility, and disclosures.
+## Format slate
+| # | Topik | Sudut | Relev | Sumber | Baru | Layak | Risiko | Total |
+|---|---|---|---|---|---|---|---|---|
+
+## Aturan
+- Skor adalah penilaian terstruktur, bukan prediksi performa.
+- Setiap topik dari peringatan tanggal harus diverifikasi tanggalnya.
+- Hentikan di Gerbang A untuk persetujuan topik.

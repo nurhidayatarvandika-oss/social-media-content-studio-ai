@@ -14,3 +14,9 @@ Alur agent:
 9. Owner menyetujui seluruh aset sebelum publikasi.
 
 Catatan: contoh ini adalah alur kerja, bukan naskah sejarah yang sudah diverifikasi.
+
+## Cara menjalankan
+```
+/history-documentary Perjanjian Giyanti dari awal mula sampai perjanjian dibuat, 8-9 menit
+```
+Studio akan berhenti di Gerbang A (topik/sudut) dan B (naskah setelah fact-check) sebelum produksi. Isi `templates/source-log.md` dan `templates/fact-check-report.md` dengan sumber nyata; contoh ini tidak memuat fakta sejarah yang diverifikasi.

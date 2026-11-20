@@ -1,24 +1,27 @@
 ---
 name: platform-repurposing
-description: "Adapt an approved source asset into distinct YouTube, Facebook, and TikTok deliverables."
+description: "Memetakan satu aset induk menjadi paket native untuk YouTube, Facebook, dan TikTok."
+agents: [repurposing-specialist, youtube-shorts-specialist, facebook-reels-specialist, tiktok-video-specialist]
 ---
 
-# Platform Repurposing Skill
+# Skill: Repurposing platform
 
-## Purpose
-Adapt an approved source asset into distinct YouTube, Facebook, and TikTok deliverables.
+Memetakan satu aset induk menjadi paket native untuk YouTube, Facebook, dan TikTok.
+## Matriks adaptasi
+| Aspek | YouTube | Facebook | TikTok |
+|---|---|---|---|
+| Format utama | Video panjang + Shorts | Reels + posting feed | Vertikal pendek / seri bagian |
+| Hook | Janji judul + 30 detik pertama | Fakta atau pertanyaan yang memicu berbagi | 1-2 detik pertama |
+| Caption/deskripsi | Deskripsi lengkap, bab, sumber | Percakapan, pertanyaan diskusi | Singkat, kata kunci pencarian |
+| Konteks | Penuh | Cukup untuk dipahami sendiri | Satu gagasan per video |
+| Penutup | CTA ringan ke video lanjutan | Ajak diskusi substantif | Kesimpulan atau bagian berikutnya |
 
-## Procedure
-1. Read the studio configuration and approved brief.
-2. Confirm objective, audience, platform, and deliverable format.
-3. Apply the relevant specialist agents.
-4. Separate verified evidence from recommendations and creative choices.
-5. Produce the required output in the matching template.
-6. Run the governance and quality checklist.
-7. Return a human approval gate and next action.
+## Prosedur
+1. Petakan momen terbaik naskah induk dan konteks minimumnya.
+2. Tentukan potongan: 1 video panjang, 2-3 potongan pendek dengan hook berbeda.
+3. Tulis ulang hook, caption, dan teks layar per platform; jangan salin-tempel identik.
+4. Isi `templates/platform-package.md` per platform.
+5. QC: pastikan potongan tidak menyesatkan dan fakta konsisten lintas platform.
 
-## Guardrails
-- Do not invent sources, metrics, platform rules, or performance guarantees.
-- Verify time-sensitive claims against current primary sources.
-- Do not publish or schedule without explicit, action-specific approval.
-- Respect copyright, privacy, consent, accessibility, and disclosures.
+## Aturan
+Musik dari satu platform tidak otomatis berlisensi untuk platform lain. Jadwal diposting berselang agar tiap platform mendapat perhatian sendiri; ini usulan, bukan jaminan hasil.

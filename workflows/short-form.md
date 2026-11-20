@@ -1,16 +1,22 @@
-# Workflow: Short Form
+# Workflow: Video pendek
 
-## Steps
-1. Select one clear viewer takeaway
-2. Write 3 truthful hook options
-3. Build a concise beat sheet
-4. Plan vertical shots and on-screen text
-5. Prepare narration, edit notes, caption, and CTA
-6. Adapt per platform
-7. Check context, rights, captions, and claim accuracy
-8. Obtain owner approval
+**Tujuan:** Mengerjakan satu video vertikal mandiri (Shorts, Reels, atau TikTok).
+**Pemakaian:** Dipakai oleh /tiktok-video dan /facebook-reels.
 
-## Completion criteria
-- Required deliverables are present.
-- Unknowns and risks are visible.
-- Human approval is recorded before external publication.
+| No | Agen | Aksi | Keluaran | Gerbang |
+|---|---|---|---|---|
+| 1 | hook-specialist | Tulis 5 hook dan pilih satu | Hook | - |
+| 2 | tiktok-video-specialist, facebook-reels-specialist, youtube-shorts-specialist | Tulis naskah ±45 detik sesuai platform sasaran dengan konteks mandiri | Naskah pendek | - |
+| 3 | fact-checker | Verifikasi klaim; pastikan potongan tidak menyesatkan | Catatan fakta | Gerbang B |
+| 4 | video-editor, tiktok-search-specialist | Teks layar, subtitle, caption, hashtag/kata kunci | Paket aset | - |
+| 5 | copyright-policy-reviewer, quality-controller | Audit hak musik dan visual, nilai QC | Laporan QC | Gerbang C |
+
+## Aturan
+- Langkah berurutan kecuali agen yang independen (boleh paralel).
+- Berhenti di setiap gerbang dan minta persetujuan eksplisit untuk gerbang itu saja.
+- Temuan KRITIS dari QC mengembalikan alur ke langkah penyebabnya.
+- Tidak ada aksi publikasi, penghapusan, pengeluaran dana, atau perubahan akun tanpa persetujuan Gerbang D.
+
+## Selesai bila
+- Semua keluaran tabel di atas ada dan temuan terbuka tercatat.
+- Status gerbang tercatat di templates/approval-record.md.

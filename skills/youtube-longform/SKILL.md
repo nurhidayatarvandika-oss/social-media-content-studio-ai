@@ -1,24 +1,29 @@
 ---
 name: youtube-longform
-description: "Create a viewer-focused long-form video plan with narrative structure, retention beats, chapters, and metadata."
+description: "Struktur dokumenter sinematik 8-9 menit dengan beat retensi dan bab."
+agents: [youtube-strategist, youtube-longform-specialist, scriptwriter, storyteller]
 ---
 
-# YouTube Long-form Skill
+# Skill: YouTube long-form
 
-## Purpose
-Create a viewer-focused long-form video plan with narrative structure, retention beats, chapters, and metadata.
+Struktur dokumenter sinematik 8-9 menit dengan beat retensi dan bab.
+## Kerangka waktu (target 8-9 menit)
+Asumsi kecepatan narasi ±140 kata/menit (sesuaikan dengan rekaman): sekitar 1.100-1.300 kata total.
+| Babak | Waktu | Isi | Kata (±) |
+|---|---|---|---|
+| Hook | 0:00-0:30 | Pertanyaan atau momen yang menggugah, janji video | 70 |
+| Konteks | 0:30-2:00 | Latar, tokoh, kondisi awal | 200 |
+| Eskalasi | 2:00-4:30 | Pemicu dan konflik, penyegar tiap 60-90 detik | 350 |
+| Titik balik | 4:30-6:30 | Peristiwa inti dan keputusan | 280 |
+| Dampak | 6:30-8:00 | Akibat jangka pendek dan panjang, tafsir yang diperdebatkan | 210 |
+| Penutup | 8:00-8:45 | Jawaban pertanyaan inti, CTA ringan, rujukan sumber | 110 |
 
-## Procedure
-1. Read the studio configuration and approved brief.
-2. Confirm objective, audience, platform, and deliverable format.
-3. Apply the relevant specialist agents.
-4. Separate verified evidence from recommendations and creative choices.
-5. Produce the required output in the matching template.
-6. Run the governance and quality checklist.
-7. Return a human approval gate and next action.
+## Penyegar retensi (pilih sesuai konten)
+Pertanyaan retoris yang dijawab kemudian, peta animasi, perubahan visual, fakta tak terduga yang benar, perbandingan dulu-kini.
 
-## Guardrails
-- Do not invent sources, metrics, platform rules, or performance guarantees.
-- Verify time-sensitive claims against current primary sources.
-- Do not publish or schedule without explicit, action-specific approval.
-- Respect copyright, privacy, consent, accessibility, and disclosures.
+## Prosedur
+1. Tulis pertanyaan inti dan janji; susun babak sesuai tabel.
+2. Tulis naskah per babak dengan label FAKTA/TAFSIR/DRAMATISASI dan nomor sumber.
+3. Buat bab dengan stempel waktu perkiraan dan judul jujur.
+4. Sertakan bagian "sumber dan catatan" di deskripsi.
+5. Berhenti di Gerbang B setelah fact-check.

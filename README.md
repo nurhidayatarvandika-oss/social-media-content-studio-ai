@@ -15,12 +15,12 @@ host tool is configured to invoke them.
 
 ## Included
 
-- 36 specialist agents across management, research, writing, production,
-  YouTube, Facebook, TikTok, analytics, and governance.
-- 8 reusable skills.
-- 12 slash-command prompt templates.
+- 37 specialist agents with distinct expertise, method, and output format across management, research, writing,
+  production, YouTube, Facebook, TikTok, and analytics.
+- 8 reusable skills (research, planning, quality control, packaging, long-form, short-form, repurposing, analytics).
+- 12 operational slash-command entry points.
 - 10 end-to-end workflows.
-- Content brief, script, publishing checklist, and analytics templates.
+- 10 templates: brief, script, source log, fact-check report, QC report, approval record, platform package, publishing checklist, experiment log, analytics log.
 - Platform-aware publishing guardrails and configuration examples.
 - Indonesian-first defaults, with English support where useful.
 
@@ -28,8 +28,7 @@ host tool is configured to invoke them.
 
 1. Copy this repository into your supported agent workspace.
 2. Read `STUDIO_DIRECTOR.md` and `docs/OPERATING_MODEL.md`.
-3. Configure `config/studio.yaml` with your niche, audience, language, cadence,
-   and approval owner.
+3. Review `config/studio.yaml` (niche, audience, language, cadence, approval owner). The brand name is intentionally unset until you decide it.
 4. Start with `/daily-content` or `/content-campaign`.
 5. Review all facts, copyright, music/footage rights, claims, and platform rules.
 6. Approve each platform-specific package before scheduling or publishing.
@@ -65,6 +64,14 @@ templates/    Reusable content and review templates
 config/       Studio defaults and platform guardrails
 docs/         Operating manual, setup, governance, glossary
 ```
+
+## Validate the repository
+
+`python3 tools/validate.py` checks structure, references, routing, counts, and safety settings.
+
+## Documentation
+
+See `docs/PANDUAN.md` (Indonesian usage guide), `docs/ROADMAP.md` (pending work and integrations), and `docs/CHANGELOG.md`.
 
 ## First command
 

@@ -30,14 +30,15 @@ audience-relevant content that can be reviewed and approved efficiently.
 7. End every production run with a human approval checklist.
 
 ## Orchestration
+- Intake and planning: Content Manager + Project Manager.
 - Strategy: Content Strategist + Audience Researcher + Trend Researcher.
 - Research: Fact Checker + Source Researcher + Competitor Analyst.
-- Writing: Scriptwriter + Storyteller + Hook Specialist + Copywriter.
+- Writing: Scriptwriter + Storyteller + Hook Specialist + Copywriter + SEO Specialist.
 - Production: Video Director + Storyboard Artist + Video Prompt Engineer +
   Voice-over Writer + Editor + Thumbnail Designer.
 - Platform adaptation: YouTube, Facebook, and TikTok specialist teams.
 - Review: Brand Editor + Copyright & Policy Reviewer + Quality Controller.
-- Learning: Analytics Analyst + Experimentation Strategist.
+- Learning: Analytics Analyst + Experimentation Strategist + Repurposing Specialist + Monetization Strategist.
 
 ## Required output
 1. Brief and assumptions.
@@ -54,3 +55,15 @@ audience-relevant content that can be reviewed and approved efficiently.
 ## Delegation rule
 Delegate only when a specialist materially improves quality. Summarize each
 agent's contribution; do not dump conflicting agent outputs on the owner.
+
+## History-content rules
+- Separate documented fact, historians' conclusions, tradition/legend, and creative dramatization; label each.
+- Flag contested interpretations and present at least two views where scholars differ.
+- Label AI or reconstructed visuals as illustrations; never present them as period photographs.
+
+## Operational references
+- Active configuration: `config/studio.yaml` (brand name is intentionally unset; use `[NAMA BRAND]`).
+- Routing and pipelines: `config/agent-routing.yaml`.
+- Entry points: `commands/` (see `docs/PANDUAN.md`). Procedures: `workflows/`. Playbooks: `skills/`.
+- Templates for source log, fact-check, QC, approval record: `templates/`.
+- Approval gates: A topic, B script, C final assets, D publishing action. Record them in `templates/approval-record.md`.

@@ -1,23 +1,35 @@
 studio:
   name: "Social Media Content Studio AI"
-  version: "1.0.0"
+  version: "1.1.0"
   default_language: "id-ID"
   timezone: "Asia/Jakarta"
   operating_mode: "semi-automated"
 brand:
-  name: "Isi nama brand/channel"
-  voice: ["hangat", "jelas", "berwawasan", "natural"]
-  prohibited_tones: ["menyesatkan", "menghina", "clickbait palsu"]
+  # Nama brand BELUM ditentukan. Jangan mengarang nama; agen memakai placeholder.
+  name: null
+  placeholder: "[NAMA BRAND]"
+  voice: ["hangat", "jelas", "berwawasan", "natural", "sinematik"]
+  prohibited_tones: ["menyesatkan", "menghina", "clickbait palsu", "sensasional tanpa dasar"]
 audience:
-  primary: "Tentukan audiens utama"
+  primary: "Penonton umum Indonesia, khususnya generasi muda"
   region: "Indonesia"
   knowledge_level: "umum"
+  persona_status: "ASUMSI sampai ada data audiens dari owner"
 content:
-  niche: ["belum ditentukan"]
+  niche: ["sejarah Indonesia", "sejarah dunia"]
   pillars: ["edukasi", "hiburan", "cerita"]
+  style: "dokumenter sinematik, storytelling kuat, informatif, mudah dipahami"
   language: "Bahasa Indonesia"
   default_short_video_seconds: 45
   default_long_video_minutes: 8
+  narration_words_per_minute: 140   # asumsi perencanaan; sesuaikan setelah rekaman suara
+  visual_policy:
+    label_reconstructions: true      # rekonstruksi/ilustrasi AI wajib dilabeli
+    no_living_person_likeness: true
+    flag_contested_interpretations: true
+  cadence:                           # ASUMSI awal untuk kreator tunggal; ubah sesuai kapasitas
+    long_form_per_week: 1
+    short_form_per_week: 4
 platforms:
   enabled: ["youtube", "facebook", "tiktok"]
   youtube:
@@ -28,10 +40,14 @@ platforms:
     formats: ["vertical-video"]
 workflow:
   require_approval: true
+  approval_owner: "owner"
   approval_gates: ["topic", "script", "final-assets", "publishing-action"]
   auto_publish: false
   auto_spend: false
   auto_delete: false
+quality:
+  minimum_dimension_score_to_pass: 4   # lihat skills/quality-control
+  block_on_critical_findings: true
 research:
   require_sources_for_factual_content: true
   prefer_primary_sources: true

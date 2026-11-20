@@ -14,3 +14,14 @@ all_platforms:
   cross_platform_music_license_assumption: false
   require_human_approval_before_publish: true
   never_guarantee_virality: true
+history_content:
+  label_reconstructions_and_ai_visuals: true
+  flag_contested_interpretations: true
+  separate_fact_interpretation_dramatization: true
+  escalate_sensitive_topics: ["SARA", "tokoh politik masa kini", "kekerasan dan korban"]
+ai_disclosure:
+  check_current_platform_rules_on_synthetic_media: true
+  record_in_description_where_applicable: true
+verification:
+  record_verification_date_for_platform_claims: true
+  never_state_monetization_thresholds_from_memory: true
