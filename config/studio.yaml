@@ -1,0 +1,41 @@
+studio:
+  name: "Social Media Content Studio AI"
+  version: "1.0.0"
+  default_language: "id-ID"
+  timezone: "Asia/Jakarta"
+  operating_mode: "semi-automated"
+brand:
+  name: "Isi nama brand/channel"
+  voice: ["hangat", "jelas", "berwawasan", "natural"]
+  prohibited_tones: ["menyesatkan", "menghina", "clickbait palsu"]
+audience:
+  primary: "Tentukan audiens utama"
+  region: "Indonesia"
+  knowledge_level: "umum"
+content:
+  niche: ["belum ditentukan"]
+  pillars: ["edukasi", "hiburan", "cerita"]
+  language: "Bahasa Indonesia"
+  default_short_video_seconds: 45
+  default_long_video_minutes: 8
+platforms:
+  enabled: ["youtube", "facebook", "tiktok"]
+  youtube:
+    formats: ["long-form", "shorts"]
+  facebook:
+    formats: ["reels", "feed"]
+  tiktok:
+    formats: ["vertical-video"]
+workflow:
+  require_approval: true
+  approval_gates: ["topic", "script", "final-assets", "publishing-action"]
+  auto_publish: false
+  auto_spend: false
+  auto_delete: false
+research:
+  require_sources_for_factual_content: true
+  prefer_primary_sources: true
+  disclose_uncertainty: true
+analytics:
+  source: "owner-provided-or-authorized-connector"
+  never_invent_metrics: true
